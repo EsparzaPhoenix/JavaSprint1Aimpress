@@ -12,7 +12,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 @NoArgsConstructor
 
 @Entity
-@Table(name = "curriculo")
+@Table(name = "JV_curriculo")
 @EntityListeners(AuditingEntityListener.class)
 public class Curriculo {
 
@@ -24,8 +24,13 @@ public class Curriculo {
     @Column(name = "nm_nome", length = 100, nullable = false)
     private String nome;
 
-    @Column(name = "nr_telefone", length = 20, nullable = false)
+    @Column(name = "nr_telefone", length = 11, nullable = false)
     private String numeroTelefone;
+    //Ex: 11936620738
+
+    @Column(name = "nvl_escolaridade",length = 20, nullable = false)
+    @Enumerated(EnumType.STRING)
+    private NivelEscolaridade nivelEscolaridade;
 
     @Column(name = "ds_habilidades", nullable = false)
     private String habilidades;
@@ -36,6 +41,7 @@ public class Curriculo {
     public Curriculo(CadastrarCurriculoDto dto) {
         this.nome = dto.nome();
         this.numeroTelefone = dto.numeroTelefone();
+        this.nivelEscolaridade = dto.nivelEscolaridade();
         this.habilidades = dto.habilidades();
         this.certificacoes = dto.certificacoes();
     }
@@ -47,6 +53,9 @@ public class Curriculo {
         }
         if (dto.numeroTelefone() != null){
             this.numeroTelefone = dto.numeroTelefone();
+        }
+        if (dto.nivelEscolaridade() != null){
+            this.nivelEscolaridade = dto.nivelEscolaridade();
         }
         if (dto.habilidades() != null){
             this.habilidades = dto.habilidades();
