@@ -1,18 +1,19 @@
 ## AImpress
 
-## Sprint1JavaAdvanced
+## Integrantes e suas materias
 
-97887 - João Carlos França Figueiredo
+RM97887 - João Carlos França Figueiredo - Disruptive Architectures: IOT, IOB & Generative AI
 
-550200 - Leonardo Oliveira Esparza, encarregado de Mobile Application Development e Java Advanced
+RM550200 - Leonardo Oliveira Esparza - de Mobile App Development e Java Advanced.
 
-552421 - Flavio Sousa Vasconcelos
+RM552421 - Flavio Sousa Vasconcelos - Mastering Relational and Non-Relational Database e Devops Tools e Cloud Computing.
 
-552368 - Wellington de Oliveira Urcino Da Silva
+RM552368 - Wellington de Oliveira Urcino Da Silva - Advanced Business Development With .NET e Compliance & Quality Assurance.
 
 # Resumo
 
 Este chatbot de criação de currículos profissionais é uma ferramenta inovadora projetada para simplificar e aprimorar o processo de elaboração de currículos em um mundo competitivo. Destacando-se pela qualidade garantida através da análise de currículos de alta visibilidade, utiliza algoritmos avançados para identificar as melhores práticas e tendências do mercado. Sua integração com o LinkedIn permite acesso rápido às informações do perfil do usuário, incorporando-as automaticamente ao currículo em construção. Além da formatação em PDF para distribuição e impressão, oferece sugestões personalizadas com base em uma vasta base de dados, visando tornar o currículo mais atrativo e eficaz. Em suma, é uma ferramenta poderosa para quem busca se destacar no mercado de trabalho, oferecendo uma maneira eficiente e confiável de produzir currículos adaptados às demandas do mundo corporativo contemporâneo.
+
 
 
 # Diagram de Entidade e Relacionamento
@@ -22,6 +23,14 @@ Este chatbot de criação de currículos profissionais é uma ferramenta inovado
 # Vídeo apresentando a Proposta Tecnológica
 
   [Vídeo Pitch](https://youtu.be/LdG-z4mfc5E?si=_SLQaavNePu9GuiU)
+
+# Instrução de como rodar a aplicação
+*    Clique no botão CODE destacado em verde e faça o download do arquivo ZIP da aplicação.
+*    Descompacte o arquivo e abra o projeto em uma IDE, de preferência o Intellij.
+*    As dependências serão automaticamente baixadas pelo Maven.
+*    Inicie a aplicação clicando no botão play no topo da IDE.
+*    Abra a aplicação de testes de API (Insomnia, Postman) disponível em seu computador.
+*    Na barra de endereço, coloque a URL "http://localhost:8080/" e adicione o endpoint escolhido para teste, de acordo com a documentação.
 
 # Listagem de todos os endpoints
 
