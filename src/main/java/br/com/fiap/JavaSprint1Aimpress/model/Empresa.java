@@ -14,7 +14,7 @@ public class Empresa {
     private Long id;
 
     @Column(name = "nm_empresa", nullable = false, length = 50)
-    private String name;
+    private String nome;
 
 }
 
